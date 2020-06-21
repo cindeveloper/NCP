@@ -1,0 +1,11 @@
+D:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\BUS\bin\Debug\BUS.dll
+D:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\BUS\bin\Debug\BUS.pdb
+D:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\BUS\bin\Debug\DAO.dll
+D:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\BUS\bin\Debug\DTO.dll
+D:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\BUS\bin\Debug\DAO.pdb
+D:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\BUS\bin\Debug\DTO.pdb
+D:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+D:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\BUS\obj\Debug\BUS.csproj.CopyComplete
+D:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\BUS\obj\Debug\BUS.dll
+D:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\BUS\obj\Debug\BUS.pdb

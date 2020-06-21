@@ -1,0 +1,6 @@
+D:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\DTO\bin\Debug\DTO.dll
+D:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\DTO\bin\Debug\DTO.pdb
+D:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+D:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\DTO\obj\Debug\DTO.dll
+D:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\DTO\obj\Debug\DTO.pdb

@@ -38,7 +38,7 @@ namespace QuanLyCuaHangLinhKienPC_NCP
             panelContent.Width = 1112;
             panelContent.Height = 710;
             NhanVienDTO nv = nvBUS.TimKiemNVBUS(tenTK);
-            txtTenNV.Text = nv.HoTen;
+            txtTenNV.Text = nv.HoTenNV;
         }
         private void btnMenu_Click(object sender, EventArgs e)
         {

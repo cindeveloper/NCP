@@ -51,26 +51,26 @@ namespace QuanLyCuaHangLinhKienPC_NCP
             numericKhuyenMai.Enabled = false;
             cboXuatXu.Enabled = false;
             dtpBaoHanh.Enabled = false;
-            try
-            {
-                SanPhamDTO spDTO = new SanPhamDTO(txtMaSP.Text, txtTenSP.Text, cboLoai.Text, Convert.ToDecimal(txtGiaGoc.Text), Convert.ToDecimal(txtGiaBan.Text), Convert.ToInt32(numericSoLuong.Text), Convert.ToDateTime(dtpBaoHanh.EditValue.ToString()), Convert.ToInt32(numericKhuyenMai.Text), txtMaNCC.Text, cboXuatXu.Text);
+            //try
+            //{
+            //    SanPhamDTO spDTO = new SanPhamDTO(txtMaSP.Text, txtTenSP.Text, cboLoai.Text, Convert.ToDecimal(txtGiaGoc.Text), Convert.ToDecimal(txtGiaBan.Text), Convert.ToInt32(numericSoLuong.Text), Convert.ToDateTime(dtpBaoHanh.EditValue.ToString()), Convert.ToInt32(numericKhuyenMai.Text), txtMaNCC.Text, cboXuatXu.Text);
 
-                if (spBUS.SuaSanPham(spDTO))
-                {
-                    MessageBox.Show("Sửa Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    dgvDanhSachSP.DataSource = spBUS.LayDanhSachSanPham();
-                }
-                else
-                {
-                    MessageBox.Show("Sửa không Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    if (spBUS.SuaSanPham(spDTO))
+            //    {
+            //        MessageBox.Show("Sửa Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //        dgvDanhSachSP.DataSource = spBUS.LayDanhSachSanPham();
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show("Sửa không Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-                }
-                txtTenSP.Focus();
-            }
-            catch(Exception ex)
-            {
+            //    }
+            //    txtTenSP.Focus();
+            //}
+            //catch(Exception ex)
+            //{
 
-            }
+            //}
            
 
         }
@@ -114,25 +114,25 @@ namespace QuanLyCuaHangLinhKienPC_NCP
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            try
-            {
-                SanPhamDTO spDTO = new SanPhamDTO(txtMaSP.Text, txtTenSP.Text, cboLoai.Text, Convert.ToDecimal(txtGiaGoc.Text), Convert.ToDecimal(txtGiaBan.Text), Convert.ToInt32(numericSoLuong.Text), Convert.ToDateTime(dtpBaoHanh.EditValue.ToString()), Convert.ToInt32(numericKhuyenMai.Text), txtMaNCC.Text, cboXuatXu.Text);
-                if (spBUS.XoaSanPham(spDTO))
-                {
-                    MessageBox.Show("Xóa Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    dgvDanhSachSP.DataSource = spBUS.LayDanhSachSanPham();
-                }
-                else
-                {
-                    MessageBox.Show("Xóa Không Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //try
+            //{
+            //    SanPhamDTO spDTO = new SanPhamDTO(txtMaSP.Text, txtTenSP.Text, cboLoai.Text, Convert.ToDecimal(txtGiaGoc.Text), Convert.ToDecimal(txtGiaBan.Text), Convert.ToInt32(numericSoLuong.Text), Convert.ToDateTime(dtpBaoHanh.EditValue.ToString()), Convert.ToInt32(numericKhuyenMai.Text), txtMaNCC.Text, cboXuatXu.Text);
+            //    if (spBUS.XoaSanPham(spDTO))
+            //    {
+            //        MessageBox.Show("Xóa Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //        dgvDanhSachSP.DataSource = spBUS.LayDanhSachSanPham();
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show("Xóa Không Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                }
+            //    }
           
-            }
-            catch(Exception ex)
-            {
+            //}
+            //catch(Exception ex)
+            //{
 
-            }
+            //}
 
            
         }

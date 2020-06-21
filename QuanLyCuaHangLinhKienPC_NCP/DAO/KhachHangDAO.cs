@@ -23,8 +23,8 @@ namespace DAO
             while (reader.Read())
             {
                 KhachHangDTO kh = new KhachHangDTO();
-                kh.Sdt = reader.GetString(0);
-                kh.HoTen = reader.GetString(1);
+                kh.SDT = reader.GetString(0);
+                kh.HoTenKH = reader.GetString(1);
                 kh.DiaChi = reader.GetString(2);
                 kh.TrangThai = reader.GetBoolean(3);
                 dsKH.Add(kh);
@@ -38,7 +38,7 @@ namespace DAO
             {
                 conn.Ketnoi();
                 string query = "INSERT INTO KhachHang (SDT, HoTenKhachHang, DiaChi) VALUES ('{0}',N'{1}',N'{2}')";
-                string sql = string.Format(query, kh.Sdt, kh.HoTen, kh.DiaChi);
+                string sql = string.Format(query, kh.SDT, kh.HoTenKH, kh.DiaChi);
                 SqlCommand cmd = new SqlCommand(sql, conn.cn);
                 int count = cmd.ExecuteNonQuery();
                 if (count > 0)
@@ -63,7 +63,7 @@ namespace DAO
             {
                 conn.Ketnoi();
                 string query = "UPDATE KhachHang SET HotenKhachHang=N'{0}',DiaChi=N'{1}' WHERE SDT='{2}'";
-                string sql = string.Format(query, kh.HoTen, kh.DiaChi, kh.Sdt);
+                string sql = string.Format(query, kh.HoTenKH, kh.DiaChi, kh.SDT);
                 SqlCommand cmd = new SqlCommand(sql, conn.cn);
                 int count = cmd.ExecuteNonQuery();
                 if (count > 0)
@@ -88,7 +88,7 @@ namespace DAO
             {
                 conn.Ketnoi();
                 string query = "UPDATE KhachHang SET TrangThai='False' WHERE SDT='{0}'";
-                string sql = string.Format(query, kh.Sdt);
+                string sql = string.Format(query, kh.SDT);
                 SqlCommand cmd = new SqlCommand(sql, conn.cn);
                 int count = cmd.ExecuteNonQuery();
                 if (count > 0)
@@ -117,8 +117,8 @@ namespace DAO
             while (reader.Read())
             {
                 KhachHangDTO kh = new KhachHangDTO();
-                kh.Sdt = reader.GetString(0);
-                kh.HoTen = reader.GetString(1);
+                kh.SDT = reader.GetString(0);
+                kh.HoTenKH = reader.GetString(1);
                 kh.DiaChi = reader.GetString(2);
                 kh.TrangThai = reader.GetBoolean(3);
                 dsKH.Add(kh);

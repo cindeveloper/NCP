@@ -26,28 +26,28 @@ namespace QuanLyCuaHangLinhKienPC_NCP
         private void btnThem_Click(object sender, EventArgs e)
         {
 
-            try
-            {
+            //try
+            //{
                 
-                SanPhamDTO spDTO = new SanPhamDTO(txtMaSP.Text, txtTenSP.Text, cboLoai.Text, Convert.ToDecimal(txtGiaGoc.Text), Convert.ToDecimal(txtGiaBan.Text), Convert.ToInt32(numericSoLuong.Text), Convert.ToDateTime(dtpBH.Value.ToString("yyyy/MM/dd")), Convert.ToInt32(numericKhuyenMai.Text), txtNCC.Text, cboXuatXu.Text);
+            //    SanPhamDTO spDTO = new SanPhamDTO(txtMaSP.Text, txtTenSP.Text, cboLoai.Text, Convert.ToDecimal(txtGiaGoc.Text), Convert.ToDecimal(txtGiaBan.Text), Convert.ToInt32(numericSoLuong.Text), Convert.ToDateTime(dtpBH.Value.ToString("yyyy/MM/dd")), Convert.ToInt32(numericKhuyenMai.Text), txtNCC.Text, cboXuatXu.Text);
 
-                if (spBUS.ThenSanPham(spDTO))
-                {
-                    MessageBox.Show("Thêm Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //    if (spBUS.ThenSanPham(spDTO))
+            //    {
+            //        MessageBox.Show("Thêm Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     
 
-                }
-                else
-                {
-                    MessageBox.Show("Thêm Không Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show("Thêm Không Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-                }
+            //    }
 
-            }
-            catch (Exception err)
-            {
+            //}
+            //catch (Exception err)
+            //{
                 
-            }
+            //}
         } 
         private void btnTaoPhieu_Click(object sender, EventArgs e)
         {

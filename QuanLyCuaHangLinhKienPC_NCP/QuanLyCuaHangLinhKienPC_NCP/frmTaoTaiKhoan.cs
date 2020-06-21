@@ -55,10 +55,10 @@ namespace QuanLyCuaHangLinhKienPC_NCP
             {
                 if (cboMaNV.Text == nv.MaNV)
                 {
-                    txtHoTen.Text = nv.HoTen;
-                    txtSoDienThoai.Text = nv.Sdt;
+                    txtHoTen.Text = nv.HoTenNV;
+                    txtSoDienThoai.Text = nv.SdtNV;
                     txtDiaChi.Text = nv.DiaChi;
-                    dtpNgaySinh.EditValue = nv.NamSinh.ToString("dd/MM/yyyy");
+                    dtpNgaySinh.EditValue = nv.NgaySinh.ToString("dd/MM/yyyy");
                     if (nv.GioiTinh == true)
                     {
                         radgrpGioiTinh.SelectedIndex = 0;

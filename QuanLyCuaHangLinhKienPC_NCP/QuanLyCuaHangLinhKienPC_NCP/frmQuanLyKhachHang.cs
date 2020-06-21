@@ -34,8 +34,8 @@ namespace QuanLyCuaHangLinhKienPC_NCP
             // ...
             try
             {
-                KhachHangDTO khDTO = new KhachHangDTO(txtSDT.Text, txtHoTen.Text, txtDiaChi.Text);
-                if(result == DialogResult.Yes)
+                KhachHangDTO khDTO = new KhachHangDTO(txtMaKH.Text, txtSDT.Text, txtHoTen.Text, txtDiaChi.Text, true);
+                if (result == DialogResult.Yes)
                 {
                     if (khBus.capNhatKHBus(khDTO))
                     {
@@ -82,7 +82,7 @@ namespace QuanLyCuaHangLinhKienPC_NCP
             try
             {
                 KhachHangDTO khDTO = new KhachHangDTO(txtSDT.Text);
-                if(result == DialogResult.Yes)
+                if (result == DialogResult.Yes)
                 {
                     if (khBus.xoaKHBus(khDTO))
                     {
@@ -111,7 +111,7 @@ namespace QuanLyCuaHangLinhKienPC_NCP
             // ...
             try
             {
-                KhachHangDTO khDTO = new KhachHangDTO(txtSDT.Text, txtHoTen.Text, txtDiaChi.Text);
+                KhachHangDTO khDTO = new KhachHangDTO(txtMaKH.Text, txtSDT.Text, txtHoTen.Text, txtDiaChi.Text, true);
 
                 if (result == DialogResult.Yes)
                 {

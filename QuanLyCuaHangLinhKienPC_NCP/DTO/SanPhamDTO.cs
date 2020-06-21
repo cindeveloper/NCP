@@ -15,6 +15,10 @@ namespace DTO
         private decimal giaBan;
         private int soLuongTon;
         private int khuyenMai;
+        private string maNCC;
+        private string tenNCC;
+        private string xuaXu;
+        private DateTime ngayNhap;
         private bool trangThai;
 
         public SanPhamDTO()
@@ -22,7 +26,7 @@ namespace DTO
 
         }
 
-        public SanPhamDTO(string maSP, string tenSP, string maLoai, decimal giaGoc, decimal giaBan, int soLuongTon, int khuyenMai, bool trangThai)
+        public SanPhamDTO(string maSP, string tenSP, string maLoai, decimal giaGoc, decimal giaBan, int soLuongTon, int khuyenMai, string maNCC, string tenNCC, string xuaXu, DateTime ngayNhap, bool trangThai)
         {
             this.MaSP = maSP;
             this.TenSP = tenSP;
@@ -31,6 +35,10 @@ namespace DTO
             this.GiaBan = giaBan;
             this.SoLuongTon = soLuongTon;
             this.KhuyenMai = khuyenMai;
+            this.maNCC = maNCC;
+            this.tenNCC = tenNCC;
+            this.XuaXu = xuaXu;
+            this.ngayNhap = ngayNhap;
             this.TrangThai = trangThai;
         }
 
@@ -42,5 +50,9 @@ namespace DTO
         public int SoLuongTon { get => soLuongTon; set => soLuongTon = value; }
         public int KhuyenMai { get => khuyenMai; set => khuyenMai = value; }
         public bool TrangThai { get => trangThai; set => trangThai = value; }
+        public string TenNCC { get => tenNCC; set => tenNCC = value; }
+        public string XuaXu { get => xuaXu; set => xuaXu = value; }
+        public DateTime NgayNhap { get => ngayNhap; set => ngayNhap = value; }
+        public string MaNCC { get => maNCC; set => maNCC = value; }
     }
 }
