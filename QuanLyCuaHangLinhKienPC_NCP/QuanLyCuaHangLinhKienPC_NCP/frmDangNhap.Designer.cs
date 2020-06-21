@@ -62,7 +62,7 @@
             // 
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.ImageActive = null;
-            this.btnExit.Location = new System.Drawing.Point(363, 9);
+            this.btnExit.Location = new System.Drawing.Point(439, 9);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(25, 25);
             this.btnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -101,7 +101,7 @@
             this.header.Dock = System.Windows.Forms.DockStyle.Top;
             this.header.Location = new System.Drawing.Point(0, 0);
             this.header.Name = "header";
-            this.header.Size = new System.Drawing.Size(397, 40);
+            this.header.Size = new System.Drawing.Size(476, 40);
             this.header.TabIndex = 10;
             // 
             // bunifuSeparator1
@@ -119,7 +119,7 @@
             // logoMax
             // 
             this.logoMax.Image = ((System.Drawing.Image)(resources.GetObject("logoMax.Image")));
-            this.logoMax.Location = new System.Drawing.Point(115, 46);
+            this.logoMax.Location = new System.Drawing.Point(156, 51);
             this.logoMax.Name = "logoMax";
             this.logoMax.Size = new System.Drawing.Size(164, 102);
             this.logoMax.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -131,7 +131,7 @@
             this.separator.BackColor = System.Drawing.Color.Transparent;
             this.separator.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
             this.separator.LineThickness = 5;
-            this.separator.Location = new System.Drawing.Point(112, 188);
+            this.separator.Location = new System.Drawing.Point(153, 193);
             this.separator.Name = "separator";
             this.separator.Size = new System.Drawing.Size(171, 10);
             this.separator.TabIndex = 9;
@@ -163,7 +163,7 @@
             this.btnDangNhapHeader.IdleFillColor = System.Drawing.Color.Empty;
             this.btnDangNhapHeader.IdleForecolor = System.Drawing.Color.White;
             this.btnDangNhapHeader.IdleLineColor = System.Drawing.Color.Empty;
-            this.btnDangNhapHeader.Location = new System.Drawing.Point(112, 145);
+            this.btnDangNhapHeader.Location = new System.Drawing.Point(153, 150);
             this.btnDangNhapHeader.Margin = new System.Windows.Forms.Padding(5);
             this.btnDangNhapHeader.Name = "btnDangNhapHeader";
             this.btnDangNhapHeader.Size = new System.Drawing.Size(170, 51);
@@ -205,7 +205,7 @@
             this.slideDangNhap.Controls.Add(this.txtTenDangNhap);
             this.slideDangNhap.Controls.Add(this.lblTenDangNhap);
             this.slideDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.slideDangNhap.Location = new System.Drawing.Point(8, 204);
+            this.slideDangNhap.Location = new System.Drawing.Point(49, 209);
             this.slideDangNhap.Name = "slideDangNhap";
             this.slideDangNhap.Size = new System.Drawing.Size(380, 247);
             this.slideDangNhap.TabIndex = 6;
@@ -275,7 +275,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(397, 464);
+            this.ClientSize = new System.Drawing.Size(476, 496);
             this.Controls.Add(this.logoMax);
             this.Controls.Add(this.separator);
             this.Controls.Add(this.btnDangNhapHeader);
