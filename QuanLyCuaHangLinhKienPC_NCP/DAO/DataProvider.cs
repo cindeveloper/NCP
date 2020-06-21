@@ -20,7 +20,11 @@ namespace DAO
             {
                 if (cn.State == 0)
                 {
+<<<<<<< HEAD
+                    cn.ConnectionString = @"Data Source=PHAMVANPHUC\PHAMVANPHUC;Initial Catalog=NCP;Integrated Security=True";
+=======
                     cn.ConnectionString = @"Data Source=DESKTOP-8R0VE7P\SQLEXPRESS;Initial Catalog=NCP;Integrated Security=True";
+>>>>>>> e9b2a555ee52175816e4968b363947e182aa01f8
                     cn.Open();
                 }
             }

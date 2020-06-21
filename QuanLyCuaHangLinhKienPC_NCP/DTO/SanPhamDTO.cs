@@ -1,38 +1,46 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace DTO
 {
     public class SanPhamDTO
     {
-        public string MaSP { get; set; }
-        public string TenSP { get; set; }
-        public string LoaiSP { get; set; }
-        public decimal GiaGoc { get; set; }
-        public decimal GiaBan { get; set; }
-        public int SLT { get; set; }
-        public DateTime BaoHanh { get; set; }
-        public int KM { get; set; }
-        public string MaNCC { get; set; }
-        public int TrangThai { get; set; }
-        public string XuatXu { get; set; }
-        public DateTime NgayNhap { get; set; }
+        private string maSP;
+        private string tenSP;
+        private string maLoai;
+        private decimal giaGoc;
+        private decimal giaBan;
+        private int soLuongTon;
+        private int khuyenMai;
+        private bool trangThai;
+
         public SanPhamDTO()
         {
 
         }
-        public SanPhamDTO(string MaSanPham, string TenSanPham, string Loai, decimal Giagoc, decimal Giaban, int SL, DateTime BH, int KMai, string NCC, string XXu)
-        {
-            MaSP = MaSanPham;
-            TenSP = TenSanPham;
-            LoaiSP = Loai;
-            GiaGoc = Giagoc;
-            GiaBan = Giaban;
-            SLT = SL;
-            BaoHanh = BH;
-            KM = KMai;
-            MaNCC = NCC;
-            XuatXu = XXu;
 
+        public SanPhamDTO(string maSP, string tenSP, string maLoai, decimal giaGoc, decimal giaBan, int soLuongTon, int khuyenMai, bool trangThai)
+        {
+            this.MaSP = maSP;
+            this.TenSP = tenSP;
+            this.MaLoai = maLoai;
+            this.GiaGoc = giaGoc;
+            this.GiaBan = giaBan;
+            this.SoLuongTon = soLuongTon;
+            this.KhuyenMai = khuyenMai;
+            this.TrangThai = trangThai;
         }
+
+        public string MaSP { get => maSP; set => maSP = value; }
+        public string TenSP { get => tenSP; set => tenSP = value; }
+        public string MaLoai { get => maLoai; set => maLoai = value; }
+        public decimal GiaGoc { get => giaGoc; set => giaGoc = value; }
+        public decimal GiaBan { get => giaBan; set => giaBan = value; }
+        public int SoLuongTon { get => soLuongTon; set => soLuongTon = value; }
+        public int KhuyenMai { get => khuyenMai; set => khuyenMai = value; }
+        public bool TrangThai { get => trangThai; set => trangThai = value; }
     }
 }

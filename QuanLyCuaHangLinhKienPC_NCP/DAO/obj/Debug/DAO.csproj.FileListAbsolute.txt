@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+D:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\DAO\bin\Debug\DAO.dll
+D:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\DAO\bin\Debug\DAO.pdb
+D:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\DAO\bin\Debug\DTO.dll
+D:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\DAO\bin\Debug\DTO.pdb
+D:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+D:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+D:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\DAO\obj\Debug\DAO.csproj.CopyComplete
+D:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\DAO\obj\Debug\DAO.dll
+D:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\DAO\obj\Debug\DAO.pdb
+=======
 C:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\DAO\bin\Debug\DAO.dll
 C:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\DAO\bin\Debug\DAO.pdb
 C:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\DAO\bin\Debug\DTO.dll
@@ -7,3 +18,4 @@ C:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\DAO\obj\Debug\DAO.csproj.CoreCompileIn
 C:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\DAO\obj\Debug\DAO.csproj.CopyComplete
 C:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\DAO\obj\Debug\DAO.dll
 C:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\DAO\obj\Debug\DAO.pdb
+>>>>>>> e9b2a555ee52175816e4968b363947e182aa01f8
