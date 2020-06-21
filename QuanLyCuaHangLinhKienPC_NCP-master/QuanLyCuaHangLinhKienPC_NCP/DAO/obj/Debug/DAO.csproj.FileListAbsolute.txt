@@ -7,3 +7,12 @@ C:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP-master\QuanLyCuaHangLinhKienPC_NCP\DAO
 C:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP-master\QuanLyCuaHangLinhKienPC_NCP\DAO\obj\Debug\DAO.csproj.CopyComplete
 C:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP-master\QuanLyCuaHangLinhKienPC_NCP\DAO\obj\Debug\DAO.dll
 C:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP-master\QuanLyCuaHangLinhKienPC_NCP\DAO\obj\Debug\DAO.pdb
+D:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP-master\QuanLyCuaHangLinhKienPC_NCP\DAO\bin\Debug\DAO.dll
+D:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP-master\QuanLyCuaHangLinhKienPC_NCP\DAO\bin\Debug\DAO.pdb
+D:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP-master\QuanLyCuaHangLinhKienPC_NCP\DAO\bin\Debug\DTO.dll
+D:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP-master\QuanLyCuaHangLinhKienPC_NCP\DAO\bin\Debug\DTO.pdb
+D:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP-master\QuanLyCuaHangLinhKienPC_NCP\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+D:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP-master\QuanLyCuaHangLinhKienPC_NCP\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+D:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP-master\QuanLyCuaHangLinhKienPC_NCP\DAO\obj\Debug\DAO.csproj.CopyComplete
+D:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP-master\QuanLyCuaHangLinhKienPC_NCP\DAO\obj\Debug\DAO.dll
+D:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP-master\QuanLyCuaHangLinhKienPC_NCP\DAO\obj\Debug\DAO.pdb

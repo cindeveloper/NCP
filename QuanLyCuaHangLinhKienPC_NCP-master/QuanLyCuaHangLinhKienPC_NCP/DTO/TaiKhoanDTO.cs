@@ -10,25 +10,33 @@ namespace DTO
 {
     public class TaiKhoanDTO
     {
-        public string TenTaiKhoan { get; set; }
-        public string MatKhau { get; set; }
-        public string MaNhanVien { get; set; }
-        public int MaQuyen { get; set; }
-        public string TenQuyen { get; set; }
-        public bool TrangThai { get; set; }
-
-        public TaiKhoanDTO(string tenTaiKhoan, string matKhau, string maNhanVien, int maQuyen)
-        {
-            TenTaiKhoan = tenTaiKhoan;
-            MatKhau = matKhau;
-            MaNhanVien = maNhanVien;
-            MaQuyen = maQuyen;
-           // TenQuyen = tenQuyen;
-        }
+        private string tenTaiKhoan;
+        private string matKhau;
+        private string maNhanVien;
+        private int maQuyen;
+        private string tenQuyen;
+        private bool trangThai;
 
         public TaiKhoanDTO()
         {
+
         }
 
+        public TaiKhoanDTO(string tenTaiKhoan, string matKhau, string maNhanVien, int maQuyen, string tenQuyen, bool trangThai)
+        {
+            this.TenTaiKhoan = tenTaiKhoan;
+            this.MatKhau = matKhau;
+            this.MaNhanVien = maNhanVien;
+            this.MaQuyen = maQuyen;
+            this.TenQuyen = tenQuyen;
+            this.TrangThai = trangThai;
+        }
+
+        public string TenTaiKhoan { get => tenTaiKhoan; set => tenTaiKhoan = value; }
+        public string MatKhau { get => matKhau; set => matKhau = value; }
+        public string MaNhanVien { get => maNhanVien; set => maNhanVien = value; }
+        public int MaQuyen { get => maQuyen; set => maQuyen = value; }
+        public string TenQuyen { get => tenQuyen; set => tenQuyen = value; }
+        public bool TrangThai { get => trangThai; set => trangThai = value; }
     }
 }
