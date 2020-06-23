@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.SqlServer.Server;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,16 +18,17 @@ namespace DTO
         private int khuyenMai;
         private string maNCC;
         private string tenNCC;
-        private string xuaXu;
-        private DateTime ngayNhap;
+        private string xuatXu;
         private bool trangThai;
+        private string TenLoai;
+        private DateTime ngayNhap;
 
         public SanPhamDTO()
         {
 
         }
 
-        public SanPhamDTO(string maSP, string tenSP, string maLoai, decimal giaGoc, decimal giaBan, int soLuongTon, int khuyenMai, string maNCC, string tenNCC, string xuaXu, DateTime ngayNhap, bool trangThai)
+        public SanPhamDTO(string maSP, string tenSP, string maLoai, decimal giaGoc, decimal giaBan, int soLuongTon, int khuyenMai,string XuaXu)
         {
             this.MaSP = maSP;
             this.TenSP = tenSP;
@@ -37,8 +39,7 @@ namespace DTO
             this.KhuyenMai = khuyenMai;
             this.maNCC = maNCC;
             this.tenNCC = tenNCC;
-            this.XuaXu = xuaXu;
-            this.ngayNhap = ngayNhap;
+            this.XuaXu = XuaXu;
             this.TrangThai = trangThai;
         }
 
@@ -51,8 +52,9 @@ namespace DTO
         public int KhuyenMai { get => khuyenMai; set => khuyenMai = value; }
         public bool TrangThai { get => trangThai; set => trangThai = value; }
         public string TenNCC { get => tenNCC; set => tenNCC = value; }
-        public string XuaXu { get => xuaXu; set => xuaXu = value; }
-        public DateTime NgayNhap { get => ngayNhap; set => ngayNhap = value; }
+        public string XuaXu { get => xuatXu; set => xuatXu = value; }
         public string MaNCC { get => maNCC; set => maNCC = value; }
+        public DateTime NgayNhap { get => ngayNhap; set => ngayNhap = value; }
+        public string TenLoai1 { get => TenLoai; set => TenLoai = value; }
     }
 }

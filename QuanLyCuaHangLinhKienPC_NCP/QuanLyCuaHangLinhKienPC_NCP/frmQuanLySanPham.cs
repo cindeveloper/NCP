@@ -32,7 +32,7 @@ namespace QuanLyCuaHangLinhKienPC_NCP
             numericSoLuong.Enabled = false;
             txtGiaGoc.Enabled = true;
             txtGiaBan.Enabled = true;
-            dtpBaoHanh.Enabled = true;
+            //dtpBaoHanh.Enabled = true;
             numericKhuyenMai.Enabled = true;
             cboXuatXu.Enabled = true;
             txtTenSP.Focus();
@@ -50,7 +50,7 @@ namespace QuanLyCuaHangLinhKienPC_NCP
             txtGiaBan.Enabled = false;
             numericKhuyenMai.Enabled = false;
             cboXuatXu.Enabled = false;
-            dtpBaoHanh.Enabled = false;
+            //dtpBaoHanh.Enabled = false;
             //try
             //{
             //    SanPhamDTO spDTO = new SanPhamDTO(txtMaSP.Text, txtTenSP.Text, cboLoai.Text, Convert.ToDecimal(txtGiaGoc.Text), Convert.ToDecimal(txtGiaBan.Text), Convert.ToInt32(numericSoLuong.Text), Convert.ToDateTime(dtpBaoHanh.EditValue.ToString()), Convert.ToInt32(numericKhuyenMai.Text), txtMaNCC.Text, cboXuatXu.Text);
@@ -90,22 +90,26 @@ namespace QuanLyCuaHangLinhKienPC_NCP
 
         private void dgvDanhSachSP_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(dgvDanhSachSP.Rows[e.RowIndex].Cells[e.ColumnIndex].Value!=null)
+            if(e.RowIndex>0)
+            {
+                return;
+            }
+            else if (dgvDanhSachSP.Rows[e.RowIndex].Cells[e.ColumnIndex].Value != null)
             {
                 dgvDanhSachSP.CurrentRow.Selected = true;
                 txtMaSP.Text = dgvDanhSachSP.Rows[e.RowIndex].Cells[0].Value.ToString();
                 txtTenSP.Text = dgvDanhSachSP.Rows[e.RowIndex].Cells[1].Value.ToString();
                 cboLoai.Text = dgvDanhSachSP.Rows[e.RowIndex].Cells[2].Value.ToString();
-                txtGiaGoc.Text = dgvDanhSachSP.Rows[e.RowIndex].Cells[3].Value.ToString();
-                txtGiaBan.Text = dgvDanhSachSP.Rows[e.RowIndex].Cells[4].Value.ToString();
-                numericSoLuong.Text = dgvDanhSachSP.Rows[e.RowIndex].Cells[5].Value.ToString();
-                dtpBaoHanh.Text = dgvDanhSachSP.Rows[e.RowIndex].Cells[6].Value.ToString();
-                numericKhuyenMai.Text = dgvDanhSachSP.Rows[e.RowIndex].Cells[7].Value.ToString();
-                txtMaNCC.Text = dgvDanhSachSP.Rows[e.RowIndex].Cells[8].Value.ToString();
-                cboXuatXu.Text = dgvDanhSachSP.Rows[e.RowIndex].Cells[9].Value.ToString();
-                dtpNgayNhap.Text = dgvDanhSachSP.Rows[e.RowIndex].Cells[10].Value.ToString();
+                txtGiaGoc.Text= dgvDanhSachSP.Rows[e.RowIndex].Cells[3].Value.ToString();
+                 txtGiaBan.Text = dgvDanhSachSP.Rows[e.RowIndex].Cells[4].Value.ToString();
+                numericSoLuong.Text= dgvDanhSachSP.Rows[e.RowIndex].Cells[5].Value.ToString();
+                numericKhuyenMai.Text= dgvDanhSachSP.Rows[e.RowIndex].Cells[6].Value.ToString();
+                txtMaNCC.Text= dgvDanhSachSP.Rows[e.RowIndex].Cells[7].Value.ToString();
+                cboXuatXu.Text= dgvDanhSachSP.Rows[e.RowIndex].Cells[8].Value.ToString();
+                dtpNgayNhap.Text= dgvDanhSachSP.Rows[e.RowIndex].Cells[9].Value.ToString();
             }
-            
+
+
         }
         private void btnThoat_Click(object sender, EventArgs e)
         {

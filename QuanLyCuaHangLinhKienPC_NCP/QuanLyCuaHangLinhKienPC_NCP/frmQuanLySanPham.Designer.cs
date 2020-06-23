@@ -57,7 +57,6 @@
             this.colGiaGoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colGiaBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colSoLuongTon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colBaoHanh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colKhuyenMai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colMaNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colXuatXu = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -67,10 +66,8 @@
             this.numericSoLuong = new DevExpress.XtraEditors.SpinEdit();
             this.cboXuatXu = new System.Windows.Forms.ComboBox();
             this.lblXuatXu = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.lblBaoHanh = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.cboLoai = new System.Windows.Forms.ComboBox();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.dtpBaoHanh = new DevExpress.XtraEditors.DateEdit();
             this.dtpNgayNhap = new DevExpress.XtraEditors.DateEdit();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtTenSP = new Bunifu.Framework.UI.BunifuMetroTextbox();
@@ -102,8 +99,6 @@
             this.panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericKhuyenMai.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericSoLuong.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtpBaoHanh.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtpBaoHanh.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtpNgayNhap.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtpNgayNhap.Properties)).BeginInit();
             this.panel1.SuspendLayout();
@@ -195,7 +190,6 @@
             this.colGiaGoc,
             this.colGiaBan,
             this.colSoLuongTon,
-            this.colBaoHanh,
             this.colKhuyenMai,
             this.colMaNCC,
             this.colXuatXu,
@@ -249,7 +243,7 @@
             // 
             // colLoai
             // 
-            this.colLoai.DataPropertyName = "LoaiSP";
+            this.colLoai.DataPropertyName = "TenLoai1";
             this.colLoai.HeaderText = "Loại";
             this.colLoai.Name = "colLoai";
             this.colLoai.ReadOnly = true;
@@ -270,35 +264,28 @@
             // 
             // colSoLuongTon
             // 
-            this.colSoLuongTon.DataPropertyName = "SLT";
+            this.colSoLuongTon.DataPropertyName = "SoLuongTon";
             this.colSoLuongTon.HeaderText = "SL tồn";
             this.colSoLuongTon.Name = "colSoLuongTon";
             this.colSoLuongTon.ReadOnly = true;
             // 
-            // colBaoHanh
-            // 
-            this.colBaoHanh.DataPropertyName = "BaoHanh";
-            this.colBaoHanh.HeaderText = "Bảo hành";
-            this.colBaoHanh.Name = "colBaoHanh";
-            this.colBaoHanh.ReadOnly = true;
-            // 
             // colKhuyenMai
             // 
-            this.colKhuyenMai.DataPropertyName = "KM";
+            this.colKhuyenMai.DataPropertyName = "KhuyenMai";
             this.colKhuyenMai.HeaderText = "KM (%)";
             this.colKhuyenMai.Name = "colKhuyenMai";
             this.colKhuyenMai.ReadOnly = true;
             // 
             // colMaNCC
             // 
-            this.colMaNCC.DataPropertyName = "MaNCC";
-            this.colMaNCC.HeaderText = "Mã NCC";
+            this.colMaNCC.DataPropertyName = "TenNCC";
+            this.colMaNCC.HeaderText = "Nhà Cung Cấp";
             this.colMaNCC.Name = "colMaNCC";
             this.colMaNCC.ReadOnly = true;
             // 
             // colXuatXu
             // 
-            this.colXuatXu.DataPropertyName = "XuatXu";
+            this.colXuatXu.DataPropertyName = "XuaXu";
             this.colXuatXu.HeaderText = "Xuất xứ";
             this.colXuatXu.Name = "colXuatXu";
             this.colXuatXu.ReadOnly = true;
@@ -319,10 +306,8 @@
             this.panel.Controls.Add(this.numericSoLuong);
             this.panel.Controls.Add(this.cboXuatXu);
             this.panel.Controls.Add(this.lblXuatXu);
-            this.panel.Controls.Add(this.lblBaoHanh);
             this.panel.Controls.Add(this.cboLoai);
             this.panel.Controls.Add(this.bunifuCustomLabel3);
-            this.panel.Controls.Add(this.dtpBaoHanh);
             this.panel.Controls.Add(this.dtpNgayNhap);
             this.panel.Controls.Add(this.bunifuCustomLabel2);
             this.panel.Controls.Add(this.txtTenSP);
@@ -355,7 +340,7 @@
             0,
             0});
             this.numericKhuyenMai.Enabled = false;
-            this.numericKhuyenMai.Location = new System.Drawing.Point(384, 174);
+            this.numericKhuyenMai.Location = new System.Drawing.Point(653, 174);
             this.numericKhuyenMai.Name = "numericKhuyenMai";
             this.numericKhuyenMai.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericKhuyenMai.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
@@ -405,9 +390,9 @@
             "Admin",
             "Thu Ngân",
             "Chăm Sóc Khách Hàng"});
-            this.cboXuatXu.Location = new System.Drawing.Point(647, 170);
+            this.cboXuatXu.Location = new System.Drawing.Point(897, 110);
             this.cboXuatXu.Name = "cboXuatXu";
-            this.cboXuatXu.Size = new System.Drawing.Size(138, 28);
+            this.cboXuatXu.Size = new System.Drawing.Size(158, 28);
             this.cboXuatXu.TabIndex = 15;
             // 
             // lblXuatXu
@@ -415,22 +400,11 @@
             this.lblXuatXu.AutoSize = true;
             this.lblXuatXu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblXuatXu.ForeColor = System.Drawing.Color.Black;
-            this.lblXuatXu.Location = new System.Drawing.Point(550, 177);
+            this.lblXuatXu.Location = new System.Drawing.Point(792, 113);
             this.lblXuatXu.Name = "lblXuatXu";
             this.lblXuatXu.Size = new System.Drawing.Size(71, 20);
             this.lblXuatXu.TabIndex = 12;
             this.lblXuatXu.Text = "Xuất xứ :";
-            // 
-            // lblBaoHanh
-            // 
-            this.lblBaoHanh.AutoSize = true;
-            this.lblBaoHanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBaoHanh.ForeColor = System.Drawing.Color.Black;
-            this.lblBaoHanh.Location = new System.Drawing.Point(805, 118);
-            this.lblBaoHanh.Name = "lblBaoHanh";
-            this.lblBaoHanh.Size = new System.Drawing.Size(86, 20);
-            this.lblBaoHanh.TabIndex = 12;
-            this.lblBaoHanh.Text = "Bảo hành :";
             // 
             // cboLoai
             // 
@@ -458,25 +432,6 @@
             this.bunifuCustomLabel3.Size = new System.Drawing.Size(47, 20);
             this.bunifuCustomLabel3.TabIndex = 12;
             this.bunifuCustomLabel3.Text = "Loại :";
-            // 
-            // dtpBaoHanh
-            // 
-            this.dtpBaoHanh.EditValue = new System.DateTime(2020, 6, 7, 0, 0, 0, 0);
-            this.dtpBaoHanh.Enabled = false;
-            this.dtpBaoHanh.Location = new System.Drawing.Point(897, 115);
-            this.dtpBaoHanh.Name = "dtpBaoHanh";
-            this.dtpBaoHanh.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpBaoHanh.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.dtpBaoHanh.Properties.Appearance.Options.UseFont = true;
-            this.dtpBaoHanh.Properties.Appearance.Options.UseForeColor = true;
-            this.dtpBaoHanh.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dtpBaoHanh.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dtpBaoHanh.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
-            this.dtpBaoHanh.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.dtpBaoHanh.Size = new System.Drawing.Size(158, 26);
-            this.dtpBaoHanh.TabIndex = 14;
             // 
             // dtpNgayNhap
             // 
@@ -606,7 +561,7 @@
             this.txtMaNCC.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaNCC.MaxLength = 32767;
             this.txtMaNCC.Name = "txtMaNCC";
-            this.txtMaNCC.Size = new System.Drawing.Size(85, 28);
+            this.txtMaNCC.Size = new System.Drawing.Size(182, 28);
             this.txtMaNCC.TabIndex = 13;
             this.txtMaNCC.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -635,7 +590,7 @@
             this.lblKhuyenMai.AutoSize = true;
             this.lblKhuyenMai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblKhuyenMai.ForeColor = System.Drawing.Color.Black;
-            this.lblKhuyenMai.Location = new System.Drawing.Point(264, 177);
+            this.lblKhuyenMai.Location = new System.Drawing.Point(548, 178);
             this.lblKhuyenMai.Name = "lblKhuyenMai";
             this.lblKhuyenMai.Size = new System.Drawing.Size(99, 20);
             this.lblKhuyenMai.TabIndex = 12;
@@ -915,8 +870,6 @@
             this.panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericKhuyenMai.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericSoLuong.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtpBaoHanh.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtpBaoHanh.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtpNgayNhap.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtpNgayNhap.Properties)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -943,7 +896,6 @@
         private DevExpress.XtraEditors.SpinEdit numericSoLuong;
         private System.Windows.Forms.ComboBox cboXuatXu;
         private Bunifu.Framework.UI.BunifuCustomLabel lblXuatXu;
-        private Bunifu.Framework.UI.BunifuCustomLabel lblBaoHanh;
         private System.Windows.Forms.ComboBox cboLoai;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
         private DevExpress.XtraEditors.DateEdit dtpNgayNhap;
@@ -962,22 +914,20 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btnCapNhat;
         private Bunifu.Framework.UI.BunifuThinButton2 btnXoa;
         private Bunifu.Framework.UI.BunifuThinButton2 btnNhapHang;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtMaNCC;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
+        private System.Windows.Forms.Panel panel3;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblBannerQuanLySP;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnQuayVeTrangChinh;
         private System.Windows.Forms.DataGridViewTextBoxColumn colMaSP;
         private System.Windows.Forms.DataGridViewTextBoxColumn colTenSP;
         private System.Windows.Forms.DataGridViewTextBoxColumn colLoai;
         private System.Windows.Forms.DataGridViewTextBoxColumn colGiaGoc;
         private System.Windows.Forms.DataGridViewTextBoxColumn colGiaBan;
         private System.Windows.Forms.DataGridViewTextBoxColumn colSoLuongTon;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colBaoHanh;
         private System.Windows.Forms.DataGridViewTextBoxColumn colKhuyenMai;
         private System.Windows.Forms.DataGridViewTextBoxColumn colMaNCC;
         private System.Windows.Forms.DataGridViewTextBoxColumn colXuatXu;
         private System.Windows.Forms.DataGridViewTextBoxColumn colNgayNhap;
-        private Bunifu.Framework.UI.BunifuMetroTextbox txtMaNCC;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
-        private DevExpress.XtraEditors.DateEdit dtpBaoHanh;
-        private System.Windows.Forms.Panel panel3;
-        private Bunifu.Framework.UI.BunifuCustomLabel lblBannerQuanLySP;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnQuayVeTrangChinh;
     }
 }

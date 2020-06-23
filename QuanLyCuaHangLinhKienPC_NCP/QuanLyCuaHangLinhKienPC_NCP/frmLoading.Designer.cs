@@ -63,7 +63,7 @@
             // 
             this.icon.BackColor = System.Drawing.Color.Black;
             this.icon.Image = ((System.Drawing.Image)(resources.GetObject("icon.Image")));
-            this.icon.Location = new System.Drawing.Point(-94, 99);
+            this.icon.Location = new System.Drawing.Point(-65, 111);
             this.icon.Name = "icon";
             this.icon.Size = new System.Drawing.Size(596, 159);
             this.icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -73,7 +73,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(133, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(162, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(166, 110);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -90,7 +90,7 @@
             this.lblLoading.AutoSize = true;
             this.lblLoading.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLoading.ForeColor = System.Drawing.Color.Yellow;
-            this.lblLoading.Location = new System.Drawing.Point(97, 258);
+            this.lblLoading.Location = new System.Drawing.Point(140, 284);
             this.lblLoading.Name = "lblLoading";
             this.lblLoading.Size = new System.Drawing.Size(211, 25);
             this.lblLoading.TabIndex = 3;
@@ -101,7 +101,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(12)))));
-            this.ClientSize = new System.Drawing.Size(409, 302);
+            this.ClientSize = new System.Drawing.Size(511, 354);
             this.Controls.Add(this.lblLoading);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.icon);

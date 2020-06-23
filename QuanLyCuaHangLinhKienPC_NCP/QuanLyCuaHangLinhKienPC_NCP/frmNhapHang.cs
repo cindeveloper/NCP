@@ -48,6 +48,25 @@ namespace QuanLyCuaHangLinhKienPC_NCP
             //{
                 
             //}
+            try
+            {
+                SanPhamDTO spDTO = new SanPhamDTO(txtMaSP.Text, txtTenSP.Text, cboLoai.Text, Convert.ToDecimal(txtGiaGoc.Text), Convert.ToDecimal(txtGiaBan.Text), Convert.ToInt32(numericSoLuong.Text), Convert.ToInt32(numericKhuyenMai.Text), cboXuatXu.Text);
+                
+                if(spBUS.ThenSanPham(spDTO))
+                {
+                    MessageBox.Show("Thêm Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }    
+                else
+                {
+                         MessageBox.Show("Thêm Không Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
+
+            }
+            catch(Exception ex)
+            {
+
+            }
         } 
         private void btnTaoPhieu_Click(object sender, EventArgs e)
         {

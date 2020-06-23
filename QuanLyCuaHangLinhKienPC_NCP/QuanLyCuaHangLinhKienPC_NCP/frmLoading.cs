@@ -37,7 +37,7 @@ namespace QuanLyCuaHangLinhKienPC_NCP
         {
             icon.Enabled = false;
             icon_delay.Stop();
-            Thread.Sleep(2000);
+            Thread.Sleep(1000);
             frmQuanLy frm = new frmQuanLy(tenTK);
             frm.Show();
             this.Hide();

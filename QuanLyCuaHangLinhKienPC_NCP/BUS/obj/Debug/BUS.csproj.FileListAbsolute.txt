@@ -9,3 +9,14 @@ D:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\BUS\obj\Debug\BUS.csprojAssemblyRefere
 D:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\BUS\obj\Debug\BUS.csproj.CopyComplete
 D:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\BUS\obj\Debug\BUS.dll
 D:\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\BUS\obj\Debug\BUS.pdb
+C:\Users\nhut\Documents\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\BUS\bin\Debug\BUS.dll
+C:\Users\nhut\Documents\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\BUS\bin\Debug\BUS.pdb
+C:\Users\nhut\Documents\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\BUS\bin\Debug\DAO.dll
+C:\Users\nhut\Documents\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\BUS\bin\Debug\DTO.dll
+C:\Users\nhut\Documents\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\BUS\bin\Debug\DAO.pdb
+C:\Users\nhut\Documents\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\BUS\bin\Debug\DTO.pdb
+C:\Users\nhut\Documents\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+C:\Users\nhut\Documents\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\nhut\Documents\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\BUS\obj\Debug\BUS.csproj.CopyComplete
+C:\Users\nhut\Documents\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\BUS\obj\Debug\BUS.dll
+C:\Users\nhut\Documents\GitHub\NCP\QuanLyCuaHangLinhKienPC_NCP\BUS\obj\Debug\BUS.pdb

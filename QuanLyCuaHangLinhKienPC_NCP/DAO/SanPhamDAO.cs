@@ -14,24 +14,22 @@ namespace DAO
         public List<SanPhamDTO>LayDSSP()
         {
             List<SanPhamDTO> SanPhams = new List<SanPhamDTO>();// Tao List
-            String Query = "SELECT sp.MaSanPham, sp.TenSanPham, sp.LoaiSanPham, sp.GiaGoc, sp.GiaBan, sp.SoLuongTon, sp.BaoHanh, sp.KhuyenMai,sp.MaNCC, sp.XuatXu, pn.NgayNhap FROM SanPham sp, PhieuNhap pn WHERE sp.MaNCC = pn.MaNCC";
+            String Query = "SELECT SP.MaSP,SP.TenSP,L.TenLoai,SP.GiaGoc,SP.GiaBan,SP.SoLuongTon,SP.KhuyenMai,NCC.TenNCC,SP.XuatXu,Pn.NgayNhap FROM SanPham SP ,NhaCungCap NCC, PhieuNhap PN,ChiTietPhieuNhap CT, LoaiSanPham L where SP.MaSP = CT.MaSP  and NCC.MaNCC = CT.MaNCC and SP.MaLoai = L.MaLoai and SP.TrangThai='True' ";
             SqlDataReader reader = con.getdata(Query);
             while(reader.Read())
             {
                 SanPhamDTO SP = new SanPhamDTO();
                 SP.MaSP = reader.GetString(0);
                 SP.TenSP = reader.GetString(1);
-                SP.MaLoai = reader.GetString(2);
+                SP.TenLoai1 = reader.GetString(2);
                 SP.GiaGoc = Math.Round(reader.GetDecimal(3));
                 SP.GiaBan = Math.Round(reader.GetDecimal(4));
                 SP.SoLuongTon = reader.GetInt32(5);
                 SP.KhuyenMai = reader.GetInt32(6);
                 SP.TenNCC = reader.GetString(7);
-                //SP.TrangThai = reader.GetInt32(9);
                 SP.XuaXu = reader.GetString(8);
                 SP.NgayNhap = reader.GetDateTime(9);
                 SanPhams.Add(SP);
-
             }   
             return SanPhams;
         }
@@ -41,8 +39,8 @@ namespace DAO
         {
             try
             {
-                string sql = "INSERT INTO [NCP].[dbo].[SanPham] VALUES ('{0}',N'{1}',N'{2}',{3},{4},{5},'{6}',{7},'{8}',N'{9}',1)";
-                string Query = string.Format(sql, sp.MaSP, sp.TenSP, sp.MaLoai, sp.GiaGoc, sp.GiaBan, sp.SoLuongTon, sp.KhuyenMai, sp.MaNCC, sp.XuaXu);
+                string sql = "INSERT INTO [NCP].[dbo].[SanPham] VALUES ('{0}',N'{1}',{2},{3},{4},{5},{6},'{7}',1)";
+                string Query = string.Format(sql, sp.MaSP, sp.TenSP, sp.MaLoai, sp.GiaGoc, sp.GiaBan, sp.SoLuongTon, sp.KhuyenMai, sp.XuaXu);
                 SqlCommand cmd = new SqlCommand(Query, con.cn);
                 int count = cmd.ExecuteNonQuery();
                 if (count>0)
@@ -52,11 +50,9 @@ namespace DAO
             }
             catch(Exception ex)
             {
-
+                
             }
-            finally
-            {
-            }
+           
             return false;
 
         }
@@ -99,6 +95,7 @@ namespace DAO
             }
             finally
             {
+                
             }
             return false;
         }
